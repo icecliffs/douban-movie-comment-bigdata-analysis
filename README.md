@@ -58,7 +58,7 @@
 
 ##### 爬虫页面
 
-![](D:\Github Resp\crawlAIdb\README.assets\17.jpg)
+![](./images/17.jpg)
 
 ##### 爬虫页面（新建任务）
 
