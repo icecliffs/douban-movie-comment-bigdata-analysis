@@ -6,7 +6,8 @@
 </div>
 
 
-> 目前仅针对豆瓣平台进行分析，后续会加入对哔哩哔哩平台分析功能
+> 目前仅针对豆瓣平台进行分析，~~后续会加入对哔哩哔哩平台分析功能（有空再做吧，操）~~
+>
 
 #### 功能
 
@@ -39,6 +40,87 @@
   
 - 数据库：MySQL
 - 数据缓存：Redis
+
+#### 爬虫系统使用说明
+
+1. 进入豆瓣 https://movie.douban.com/explore，选择需要爬取的电影标签
+2. 进入平台系统，爬虫系统->创建爬虫->填写对应的电影标签和任务详情，新建爬虫即可
+
+![](./images/20.jpg)
+
+![](./images/21.jpg)
+
+**演示过程**
+
+![](./images/19.gif)
+
+**爬虫系统数据格式**
+
+```json
+{
+		"id": 559,
+		"movie_id": "33454816",
+		"movie_name": "我是如何成为超级英雄的 Comment je suis devenu super-héros",
+		"movie_release_time": "(2020)",
+		"movie_maker": "Douglas Attal",
+		"movie_acter": "皮奥·马麦,Benoît Poelvoorde,斯万·阿劳德,LEÏLA BEKHTI,VIMALA PONS",
+		"movie_type": "动作,科幻",
+		"movie_times": "97分钟",
+		"movie_platform": "douban",
+		"movie_country": "法国 France",
+		"movie_language": "法语 French",
+		"movie_vote_total": "5.4",
+		"movie_vote_people": "794",
+		"movie_vote_star5": "2.6%",
+		"movie_vote_star4": "8.8%",
+		"movie_vote_star3": "51.7%",
+		"movie_vote_star2": "28.1%",
+		"movie_vote_star1": "8.8%",
+		"movie_desc": "2021年巴黎。超级英雄完美融入社会。一种可以赋予普通人超能力的神秘毒品在城市中传播。由于这类事件不断增多，莫罗中尉和沙尔茨曼被指派前去调查真相。他们将与两位资深治安会成员蒙特·卡洛和卡莉丝塔联手，竭尽全力遏制毒品的扩散。然而莫罗的过去重新浮出水面，事情变得十分棘手······",
+		"movie_short_comment": "全部 220 条",
+		"movie_long_comment": "全部 4 条",
+		"movie_platform_comment": null,
+		"taskname": "miaomiaomioa",
+		"comments": [
+			{
+				"id": 72289,
+				"comment_name": "Sanitya",
+				"comment_pageurl": "https://www.douban.com/people/Vine0109/",
+				"comment_id": "3140646335",
+				"comment_rank": "0",
+				"comment_content": "有事吗",
+				"comment_date": "2021-12-08T13:30:23Z",
+				"comment_movie_id": "33454816",
+				"comment_platform": "douban",
+				"taskname": "miaomiaomioa"
+			},
+			{
+				"id": 72290,
+				"comment_name": "爱吃菜的小豆豆",
+				"comment_pageurl": "https://www.douban.com/people/bihailantianmen/",
+				"comment_id": "3951794307",
+				"comment_rank": "0",
+				"comment_content": "本身很好的题材，为什么拍的却这么烂，这么无聊？完全看不下去了",
+				"comment_date": "2023-10-04T16:03:40Z",
+				"comment_movie_id": "33454816",
+				"comment_platform": "douban",
+				"taskname": "miaomiaomioa"
+			},
+			{
+				"id": 72306,
+				"comment_name": "? J@,  @L?",
+				"comment_pageurl": "https://www.douban.com/people/149292382/",
+				"comment_id": "3067848090",
+				"comment_rank": "0",
+				"comment_content": "这节奏跟故事，感觉适合连续剧多过电影吖！",
+				"comment_date": "2021-10-09T21:58:02Z",
+				"comment_movie_id": "33454816",
+				"comment_platform": "douban",
+				"taskname": "miaomiaomioa"
+			},
+        ]
+}
+```
 
 #### 项目截图
 
