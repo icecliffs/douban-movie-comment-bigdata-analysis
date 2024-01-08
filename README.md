@@ -43,7 +43,7 @@
 
 #### 爬虫系统使用说明
 
-1. 进入豆瓣 https://movie.douban.com/explore，选择需要爬取的电影标签
+1. 进入豆瓣 https://movie.douban.com/explore ，选择需要爬取的电影标签
 2. 进入平台系统，爬虫系统->创建爬虫->填写对应的电影标签和任务详情，新建爬虫即可
 
 ![](./images/20.jpg)
